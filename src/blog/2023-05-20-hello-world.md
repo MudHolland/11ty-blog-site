@@ -5,7 +5,6 @@ author: Dennis Ulijn
 date: 2023-05-20T19:33:20.502Z
 tags:
   - post
-  - featured
 image: /assets/blog/wsp25-lijn.png
 imageAlt: Looking at inset
 ---
