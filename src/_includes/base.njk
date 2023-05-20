@@ -10,8 +10,10 @@
 </head>
 <body>
 	{% include 'header.njk' %}
-	<main>
-		{{ content | safe }}
+	<main class="main">
+		<div class="wrapper">
+			{{ content | safe }}
+		</div>
 	</main>
 	{% include 'footer.njk' %}
 
