@@ -2,14 +2,11 @@
 title: Blog
 layout: 'base.njk'
 ---
-       
-<div class="section container">
-  	<ul role="list" class="articles__list flow">
+
+<div class="wrapper-50">
+	<div class="row">
 		{%- for post in collections.crede | reverse -%}
-			{% include 'article-snippet.njk' %}
+			{% include 'card.njk' %}
 		{%- endfor -%}
-
-  	</ul>
+	</div>
 </div>
-
-{% include 'featured.njk' %}
