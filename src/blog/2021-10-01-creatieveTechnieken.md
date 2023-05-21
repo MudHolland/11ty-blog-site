@@ -15,7 +15,7 @@ Ik werk graag met digitale tools. Dit is gedreven door mijn gevoel dat ik niet g
 
 ### Creatieve Sessie
 
-Voor de creatieve sessie heb ik met verschillende afdelingen van het bedrijf waar ik werk een probleem genomen dat momenteel speelt. Deze hebben we behandeld met de technieken die ik tijdens het vak Creatieve Technieken heb geleerd. Tijdens deze sessie heb ik de planning geleid, maar de inhoud kwam van de spelers zelf. De vraagstelling hierin was:</p>
+Voor de creatieve sessie heb ik met verschillende afdelingen van het bedrijf waar ik werk een probleem genomen dat momenteel speelt. Deze hebben we behandeld met de technieken die ik tijdens het vak Creatieve Technieken heb geleerd. Tijdens deze sessie heb ik de planning geleid, maar de inhoud kwam van de spelers zelf. De vraagstelling hierin was:
 
 > "Kunnen wij voor en met het mechanische ontwikkelingsteam nieuwe ideeën genereren waarmee een tableau van een beeldschermloep kan worden ontwikkeld dat meer stabiliteit en stevigheid in alle richtingen levert, omdat deze momenteel te veel speling heeft?"
 
