@@ -340,7 +340,7 @@ blockquote {
 
 blockquote::before {
     transition: var(--transition-time);
-    content: attr(big-text);
+    content: "&quot";
 	color: var(--white);
     display: block;
     font-size: 7.5rem;
