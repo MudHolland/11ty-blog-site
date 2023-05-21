@@ -6,7 +6,6 @@ author: Dennis Ulijn
 date: 2021-05-01
 tags:
   - crede
-  - post
   - featured
 image: /assets/blog/article-1.jpg
 imageAlt: This is a test
