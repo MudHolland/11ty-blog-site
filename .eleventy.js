@@ -21,7 +21,7 @@ md.renderer.rules.image = function (tokens, idx, options, env, self) {
     // Generate the HTML output
     return `<figure>
       <img src="${src}" alt="${alt}">
-      <figcaption>[${alt}]</figcaption>
+      <figcaption>${alt}</figcaption>
     </figure>`;
   };
 
