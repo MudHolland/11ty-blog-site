@@ -1,12 +1,11 @@
 ---
 title: Blog
 layout: 'base.njk'
-tags: {{tags}}
 ---
 
 <div class="wrapper-50">
 	<div class="row">
-		{%- for post in collections.{{tags}} | reverse -%}
+		{%- for post in collections.crede | reverse -%}
 			{% include 'card.njk' %}
 		{%- endfor -%}
 	</div>
