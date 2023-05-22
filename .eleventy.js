@@ -20,8 +20,11 @@ module.exports = function(eleventyConfig) {
 			output: "public"
 		}
 	}
+}
 
 const markdownIt = require('markdown-it');
+
+module.exports = function (eleventyConfig) {
   // Create a new MarkdownIt instance
   const md = markdownIt();
 
