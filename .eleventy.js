@@ -20,4 +20,24 @@ module.exports = function(eleventyConfig) {
 			output: "public"
 		}
 	}
-}
+
+const markdownIt = require('markdown-it');
+  // Create a new MarkdownIt instance
+  const md = markdownIt();
+
+  // Override the default image rendering rule
+  md.renderer.rules.image = function (tokens, idx, options, env, self) {
+    // Get the image details from the token
+    const src = tokens[idx].attrs[0][1];
+    const alt = tokens[idx].attrs[1][1];
+
+    // Generate the HTML output
+    return `<figure>
+      <img src="${src}" alt="${alt}">
+      <figcaption>[${alt}]</figcaption>
+    </figure>`;
+  };
+
+  // Add the modified MarkdownIt instance to Eleventy's markdown library
+  eleventyConfig.setLibrary('md', md);
+};
