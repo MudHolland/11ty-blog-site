@@ -16,12 +16,12 @@ module.exports = function(eleventyConfig) {
 md.renderer.rules.image = function (tokens, idx, options, env, self) {
     // Get the image details from the token
     const src = tokens[idx].attrs[0][1];
-    const imageAlt = tokens[idx].attrs[1][1];
+    const label = tokens[idx].attrs[1][1];
 
     // Generate the HTML output
     return `<figure>
-      <img src="${src}" alt="${imageAlt}">
-      <figcaption>[${imageAlt}]</figcaption>
+      <img src="${src}" alt="${label}">
+      <figcaption>[${label}]</figcaption>
     </figure>`;
   };
 
