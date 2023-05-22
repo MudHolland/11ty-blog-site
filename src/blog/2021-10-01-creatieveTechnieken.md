@@ -25,3 +25,5 @@ Hierin zijn vele ideeën naar boven gekomen waarin Tom, de mechanisch ontwikkela
 ![LWG1 - Acuity onderkant en schets van mijn voorgestelde oplossingg](/assets/blog/m1-lwg1-acuity-onderkant-oplossing.png "LWG1 - Acuity onderkant en schets van mijn voorgestelde oplossingg")
 
 ![LWG1 - Acuity oplossing prototypee](/assets/blog/m1-lwg1-acuity-prototype.png "LWG1 - Acuity oplossing prototypee")
+
+![mijn logo](/assets/blog/m1-lwg2-dudesign-logo.png)
