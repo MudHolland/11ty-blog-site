@@ -206,11 +206,10 @@ img {
 }
 
 figure{
-	width: 10;
-	box-sizing: border-box;
 	transition-duration: var(--transition-time);
-	padding-bottom:var(--size-m);
-	z-index:2;
+	margin:-var(--size-m)
+	padding-bottom:calc(var(--size-m) * -1);
+	padding:var(--size-m);
 }
 
 figure>img {
@@ -226,10 +225,6 @@ figure:hover {
     border-radius: var(--size-s);
 	z-index:2;
 }
-
-/* figure:hover figcaption {
-    padding-inline: var(--size-m);
-} */
 
 p {
 	font-size:1rem;
