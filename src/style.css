@@ -331,10 +331,6 @@ blockquote {
     z-index: 1;
 }
 
-blockquote:hover {
-	box-shadow:0 var(--size-s) var(--size-m) var(--dark);
-}
-
 blockquote::before {
     transition: var(--transition-time);
     content: "''";
