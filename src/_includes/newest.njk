@@ -1,0 +1,27 @@
+</div>
+<section>
+	<section>
+		<div class="angle-both">
+			<div class="wrapper-50">
+				<h1>Newest articles</h1>
+				<nav class="subtitle crumbs">
+					<ol>
+						<li class="crumb"><a href="/">Portfolio</a></li>
+						<li class="crumb">Module 1: Januari 2021</li>
+					</ol>
+				</nav>
+			</div>
+		</div>
+	</section>
+	<section>
+			<div class="wrapper-50">
+				<div class="row">
+					{%- for post in collections.getAll.slice(0, 3) | reverse -%}
+						{% include 'card.njk' %}
+					{%- endfor -%}
+				</div>
+			</div>
+		</div>
+	</section> 
+</section>
+<div class="wrapper-50">
