@@ -1,5 +1,5 @@
 ---
-title: Creëren van een merk
+title: Het creëren van een merk met de merkwijzer
 description: In dit artikel ga ik mezelf beschrijven als ontwerper. Hiervoor
   gebruik ik de ontwerpen die ik heb gemaakt voor de lessen die ik heb gevolgd
   in deze module.
@@ -12,6 +12,8 @@ tags:
 image: /assets/blog/m1-lwg2-small.png
 imageAlt: CreDe LWG2
 ---
+**In dit artikel ga ik mezelf beschrijven als ontwerper. Hiervoor gebruik ik de ontwerpen die ik heb gemaakt voor de lessen die ik heb gevolgd in deze module.**
+
 De eigenschappen van mijn werk worden duidelijk weergegeven in mijn merkwijzer. Hierin komt duidelijk mijn resultaatgerichte karakter naar boven. De handvatten die ik nodig heb om het overzicht in het proces te houden, het opdelen in brokken, zijn terug te herkennen in de analyserende, ontledende houding. De behoefte om het overzichtelijk en ontstressend te houden is merkbaar in mijn strakke, minimalistische en berekende resultaten. De humor waarmee ik vaak probeer het strakke, eenvoudige resultaat toch onmiskenbaar eigen te maken, heb ik vertaald naar de knipoog in mijn merkwijzer.
 
 ![Merkwijzer Dennis Ulijn](/assets/blog/m1-lwg2-merkwijzer.png "Merkwijzer Dennis Ulijn")
@@ -42,8 +44,6 @@ Hierin is te zien dat ik zoekende ben naar de identiteit, en hoewel glooiende vo
 
 ![monogram exploratie: rounded en gestalt principes](/assets/blog/m1-lwg2-monogram-exploration.png "monogram exploratie: rounded en gestalt principes")
 
- 
-
 ![monogram opbouw: ontleden tot de essentie, als laatste een knipoog door een kleine draaiing](/assets/blog/m1-lwg2-monogram-opbouw.png "monogram opbouw: ontleden tot de essentie, als laatste een knipoog door een kleine draaiing")
 
 ### Typografie
@@ -66,7 +66,7 @@ De bold-variant van Rubik en Inter Regular bieden een mooi contrast in gewicht. 
 
 ![Typografie: combinatie Rubik en Inter](/assets/blog/m1-lwg2-typografie-rubik-inter.png "Typografie: combinatie Rubik en Inter")
 
-### Kleurgebruik 
+### Kleurgebruik
 
 Kleurgebruik is een interessante case, ik ben namelijk gedeeltelijk kleurenblind. Dit zorgt er onder andere voor dat ik rood en groen slecht uit elkaar kan houden. Dit heeft me nooit geremd om mijn passie te volgen, waardoor ik elektrotechniek en ontwerpende bezigheden zonder angst ben aangegaan.
 
