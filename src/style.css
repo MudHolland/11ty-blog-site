@@ -222,15 +222,14 @@ figure>img:hover {
 }
 
 figure:hover {
-    transform: scale(1.2) rotate(3deg);
-    /* outline: solid var(--size-xxs) var(--primary); */
+    /* transform: scale(1.2) rotate(3deg); */
     border-radius: var(--size-s);
 	z-index:2;
 }
 
-figure:hover figcaption {
+/* figure:hover figcaption {
     padding-inline: var(--size-m);
-}
+} */
 
 p {
 	font-size:1rem;
