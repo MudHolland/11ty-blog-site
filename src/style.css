@@ -209,9 +209,9 @@ figure{
 	position:relative;
     border-radius: var(--size-s);
 	transition-duration: var(--transition-time);
-	margin:calc(var(--size-m) * -1);
+	margin-inline:calc(var(--size-m) * -1);
 	padding:var(--size-m);
-	margin-bottom:0;
+	z-index:1;
 }
 
 figure>img {
