@@ -1,5 +1,5 @@
 ---
-title: Het creëren van een merk met de merkwijzer
+title: Een merk creëren met de merkwijzer
 description: In dit artikel ga ik mezelf beschrijven als ontwerper. Hiervoor
   gebruik ik de ontwerpen die ik heb gemaakt voor de lessen die ik heb gevolgd
   in deze module.
@@ -10,9 +10,9 @@ tags:
   - crede
   - featured
 image: /assets/blog/m1-lwg2-small.png
-imageAlt: CreDe LWG2
+imageAlt: Paginavullend merk met achtergrond
 ---
-**In dit artikel ga ik mezelf beschrijven als ontwerper. Hiervoor gebruik ik de ontwerpen die ik heb gemaakt voor de lessen die ik heb gevolgd in deze module.**
+In dit artikel ga ik mezelf beschrijven als ontwerper. Hiervoor gebruik ik de ontwerpen die ik heb gemaakt voor de lessen die ik heb gevolgd in deze module.
 
 De eigenschappen van mijn werk worden duidelijk weergegeven in mijn merkwijzer. Hierin komt duidelijk mijn resultaatgerichte karakter naar boven. De handvatten die ik nodig heb om het overzicht in het proces te houden, het opdelen in brokken, zijn terug te herkennen in de analyserende, ontledende houding. De behoefte om het overzichtelijk en ontstressend te houden is merkbaar in mijn strakke, minimalistische en berekende resultaten. De humor waarmee ik vaak probeer het strakke, eenvoudige resultaat toch onmiskenbaar eigen te maken, heb ik vertaald naar de knipoog in mijn merkwijzer.
 
