@@ -207,6 +207,7 @@ img {
 
 figure{
 	position:relative;
+    border-radius: var(--size-s);
 	transition-duration: var(--transition-time);
 	margin:calc(var(--size-m) * -1);
 	padding:var(--size-m);
@@ -220,10 +221,7 @@ figure>img:hover {
 	cursor:pointer;
 }
 
-figure:hover,
-figure:focus {
-    /* transform: scale(1.2) rotate(3deg); */
-    border-radius: var(--size-s);
+figure:hover {
 	z-index:2;
 }
 
