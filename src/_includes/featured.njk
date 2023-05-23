@@ -1,8 +1,9 @@
-< id="featured-articles" class="featured-articles">
+<section id="featured-articles" class="featured-articles">
   	<div class="container flow">
    		<h2 class="section-title text-center ">Featured articles</h2>
-		<p class="opening">Here is a list of recent articles that show what I can do for you.</p>
+		<p class="text-center">Here is a list of recent articles that show what I can do for you.</p>
 		{%- for post in collections.featured | reverse -%}
-		    {% include 'article-snippet.njk' %}
+		    {% include 'card.njk' %}
 		{%- endfor -%}
     </div>
+</section> 
