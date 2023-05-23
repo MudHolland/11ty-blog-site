@@ -13,7 +13,6 @@
 	<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-	{% include 'modal.njk' %}
 	{% include 'header.njk' %}
 	<main class="main">
 		<div class="wrapper">
@@ -21,7 +20,8 @@
 		</div>
 	</main>
 	{% include 'footer.njk' %}
-
+	
+	{% include 'modal.njk' %}
 	{% include 'netlifyIdentity.njk' %}
 </body>
 </html>
