@@ -216,7 +216,8 @@ figure>img {
 	width:100%;
 }
 
-figure>img:hover {
+figure>img:hover,
+figure>img:focus {
 	cursor:pointer;
 }
 
