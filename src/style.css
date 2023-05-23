@@ -211,6 +211,7 @@ figure{
 	transition-duration: var(--transition-time);
 	margin:calc(var(--size-m) * -1);
 	padding:var(--size-m);
+	margin-bottom:0;
 }
 
 figure>img {
@@ -331,7 +332,7 @@ blockquote {
     z-index: 1;
 }
 
-blockquote p {
+blockquote p:last-child {
 	margin:0;
 }
 
