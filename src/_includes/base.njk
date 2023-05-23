@@ -19,7 +19,7 @@
 	{% include 'header.njk' %}
 	<main class="main">
 		<div class="wrapper">
-			{{ content | safe }}
+			{{ content | openingParagraph }}
 		</div>
 	</main>
 	{% include 'footer.njk' %}
