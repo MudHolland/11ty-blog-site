@@ -1,7 +1,6 @@
 const { DateTime } = require("luxon");
 const markdownIt = require('markdown-it');
 const md = markdownIt();
-const paragraphs = content.split('</p>');
 
 module.exports = function(eleventyConfig) {
 
@@ -30,6 +29,7 @@ module.exports = function(eleventyConfig) {
 
 	// Add a filter to modify the blog content
 	eleventyConfig.addFilter('openingParagraph', function (content) {
+		const paragraphs = content.split('</p>');
 		if (paragraphs.length > 1) {
 		  paragraphs[0] = paragraphs[0].replace('<p>', '<p class="opening">');
 		}
