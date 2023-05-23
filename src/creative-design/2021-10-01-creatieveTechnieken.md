@@ -5,6 +5,7 @@ description: Bij het vak Creatieve Technieken hebben we een aantal creatieve
 author: Dennis Ulijn
 date: 2021-05-01
 tags:
+  - school
   - crede
   - featured
 image: /assets/blog/m1-lwg1-small.png
