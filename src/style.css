@@ -322,13 +322,17 @@ blockquote {
     font-style:italic;
     font-size:1rem;
     opacity:0.9;
-    min-height: 1em;
+    min-height:1em;
     padding: 1em;
     position: relative;
     margin-block: 1em;
     background-color: var(--light-grey);
     border-radius: 0.5em;
     z-index: 1;
+}
+
+blockquote > p {
+	margin:0;
 }
 
 blockquote::before {
