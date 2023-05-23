@@ -1,9 +1,13 @@
 <section id="featured-articles" class="featured-articles">
   	<div class="container flow">
    		<h2 class="section-title text-center ">Featured articles</h2>
-		<p class="text-center">Here is a list of recent articles that show what I can do for you.</p>
-		{%- for post in collections.featured | reverse -%}
-		    {% include 'card.njk' %}
-		{%- endfor -%}
+		<p class="opening">Here is a list of recent articles that show what I can do for you.</p>
+		<div class="wrapper-50">
+			<div class="row">
+				{%- for post in collections.featured | reverse -%}
+					{% include 'card.njk' %}
+				{%- endfor -%}
+			</div>
+		</div>
     </div>
 </section> 
