@@ -216,12 +216,12 @@ figure>img {
 	width:100%;
 }
 
-figure>img:hover,
-figure>img:focus {
+figure>img:hover {
 	cursor:pointer;
 }
 
-figure:hover {
+figure:hover,
+figure:focus {
     /* transform: scale(1.2) rotate(3deg); */
     border-radius: var(--size-s);
 	z-index:2;
