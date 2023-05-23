@@ -1,4 +1,4 @@
 {
-	"layout": "card.njk",
+	"layout": "article.njk",
 	"tags": "crede"
 }
