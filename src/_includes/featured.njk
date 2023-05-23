@@ -1,13 +1,30 @@
-<section id="featured-articles" class="featured-articles">
-  	<div class="container flow">
-   		<h2 class="section-title text-center ">Featured articles</h2>
-		<p class="opening">Here is a list of recent articles that show what I can do for you.</p>
-		<div class="wrapper-50">
-			<div class="row">
-				{%- for post in collections.featured | reverse -%}
-					{% include 'card.njk' %}
-				{%- endfor -%}
+---
+title: Featured articles
+---
+
+</div>
+<section>
+	<section>
+		<div class="angle-both">
+			<div class="wrapper-50">
+				<h1 id="CreDe">{{title}}</h1>
+					<ol>
+						<li class="crumb"><a href="/">Portfolio</a></li>
+						<li class="crumb">Module 1: Januari 2021</li>
+					</ol>
+				</nav>
 			</div>
 		</div>
-    </div>
-</section> 
+	</section>
+	<section>
+			<div class="wrapper-50">
+				<div class="row">
+					{%- for post in collections.featured | reverse -%}
+						{% include 'card.njk' %}
+					{%- endfor -%}
+				</div>
+			</div>
+		</div>
+	</section> 
+</section>
+<div class="wrapper-50">
