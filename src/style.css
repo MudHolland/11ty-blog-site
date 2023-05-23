@@ -207,8 +207,7 @@ img {
 
 figure{
 	transition-duration: var(--transition-time);
-	margin:-var(--size-m)
-	padding-bottom:calc(var(--size-m) * -1);
+	margin:calc(var(--size-m) * -1);
 	padding:var(--size-m);
 }
 
