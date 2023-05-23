@@ -16,7 +16,7 @@
 	<section>
 			<div class="wrapper-50">
 				<div class="row">
-					{%- for post in collections.slice(0, 3) | reverse -%}
+					{%- for post in collections.crede.slice(0, 3) | reverse -%}
 						{% include 'card.njk' %}
 					{%- endfor -%}
 				</div>
