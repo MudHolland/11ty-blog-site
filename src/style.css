@@ -331,7 +331,7 @@ blockquote {
     z-index: 1;
 }
 
-blockquote > p {
+blockquote p {
 	margin:0;
 }
 
