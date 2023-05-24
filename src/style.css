@@ -206,12 +206,11 @@ img {
 }
 
 figure{
-	position:relative;
-    border-radius: var(--size-s);
+	width: 10;
+	box-sizing: border-box;
 	transition-duration: var(--transition-time);
-	margin-inline:calc(var(--size-m) * -1);
-	padding:var(--size-m);
-	z-index:1;
+	padding-bottom:var(--size-m);
+	z-index:2;
 }
 
 figure>img {
@@ -223,7 +222,14 @@ figure>img:hover {
 }
 
 figure:hover {
+    transform: scale(1.2) rotate(3deg);
+    /* outline: solid var(--size-xxs) var(--primary); */
+    border-radius: var(--size-s);
 	z-index:2;
+}
+
+figure:hover figcaption {
+    padding-inline: var(--size-m);
 }
 
 p {
@@ -323,17 +329,13 @@ blockquote {
     font-style:italic;
     font-size:1rem;
     opacity:0.9;
-    min-height:1em;
+    min-height: 1em;
     padding: 1em;
     position: relative;
-    margin-block: 1em;
+    margin: 1em 0;
     background-color: var(--light-grey);
     border-radius: 0.5em;
     z-index: 1;
-}
-
-blockquote p:last-child {
-	margin:0;
 }
 
 blockquote::before {
@@ -345,7 +347,7 @@ blockquote::before {
     font-weight: var(--font-weight-bold);
     text-transform: uppercase;
 	position: absolute;
-    top: -2.5rem;
+    top: -3rem;
     right: 1.25rem;
 	z-index: -1;
 }
@@ -574,11 +576,10 @@ figcaption {
 	background-color:var(--white);
 	border-radius: var(--size-s);
 	transition: var(--transition-time) ease-in;
-	height:22em;
-	display:flex;
+	height:21em;
+	display:grid;
 	width: 16em;
-	flex-direction:column;
-	justify-content:space-between;
+	align-content:space-between;
 	z-index:1;
 }
 
@@ -588,7 +589,7 @@ figcaption {
 
 .card:hover {
 	box-shadow: 0 0.75em 1.5em 0;
-	/* transform:scale(1.2) rotate(3deg); */
+	scale:1.05;
 	z-index:2;
 }
 
