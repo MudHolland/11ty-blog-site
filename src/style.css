@@ -112,10 +112,15 @@ tr:last-child{
 	border-bottom: var(--size-xxs) solid var(--secondary);
 }
 
+p + ol,
+p + ul {
+	margin-top:-1rem;
+}
+
 ul,
 ol {
 	font-size:1rem;
-	margin:0 0 var(--size-m) 0;
+	margin-bottom:var(--size-m);
 }
 
 ol li{
@@ -233,7 +238,7 @@ figure:hover figcaption {
 
 p {
 	font-size:1rem;
-	margin: 0 0 1rem 0;
+	margin-bottom: 1rem;
 }
 
 b, 
@@ -247,7 +252,7 @@ em{
 }
 
 .no-spacing {
-	margin:0!important;
+	margin-bottom:0rem;
 }
 
 .circle {
