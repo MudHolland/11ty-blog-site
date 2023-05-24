@@ -213,9 +213,10 @@ img {
 figure{
 	position:relative;
 	transition-duration: var(--transition-time);
-	margin:-1em -1em -1em 0;
+	margin:-1em -1em 0 -1em;
 	padding:1em;
-	z-index:2;
+    border-radius: var(--size-s);
+	z-index:1;
 }
 
 figure>img {
@@ -228,8 +229,7 @@ figure>img:hover {
 
 figure:hover {
     scale:1.05;
-    border-radius: var(--size-s);
-	z-index:2;
+	z-index:10;
 }
 
 p {
