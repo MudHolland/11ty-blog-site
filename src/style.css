@@ -351,7 +351,7 @@ blockquote::before {
     font-weight: var(--font-weight-bold);
     text-transform: uppercase;
 	position: absolute;
-    top: -3rem;
+    top: -2.5rem;
     right: 1.25rem;
 	z-index: -1;
 }
