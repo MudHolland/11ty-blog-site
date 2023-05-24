@@ -211,6 +211,7 @@ img {
 }
 
 figure{
+	position:relative;
 	transition-duration: var(--transition-time);
 	margin:-1em -1em -1em 0;
 	padding:1em;
@@ -229,10 +230,6 @@ figure:hover {
     scale:1.05;
     border-radius: var(--size-s);
 	z-index:2;
-}
-
-figure:hover figcaption {
-    padding-inline: var(--size-m);
 }
 
 p {
