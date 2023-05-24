@@ -211,10 +211,9 @@ img {
 }
 
 figure{
-	width: 10;
-	box-sizing: border-box;
 	transition-duration: var(--transition-time);
-	padding-bottom:var(--size-m);
+	margin:-1em -1em -1em 0;
+	padding:1em;
 	z-index:2;
 }
 
