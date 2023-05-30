@@ -575,15 +575,15 @@ figcaption {
 
 .card {
 	position:relative;
+	display:flex;
+	flex-direction: column;
 	box-shadow: 0 0.0625em 0.125em 0;
 	color:var(--dark);
 	background-color:var(--white);
 	border-radius: var(--size-s);
 	transition: var(--transition-time) ease-in;
 	height:21em;
-	display:grid;
 	width: 16em;
-	align-content:space-between;
 	z-index:1;
 }
 
@@ -608,13 +608,11 @@ figcaption {
 }
 
 .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 10em;
 	padding: 0 1em;
-}
-
-.container::after{
-	content: "";
-	clear: both;
-	display: table;
 }
 
 .card-img {
