@@ -587,6 +587,10 @@ figcaption {
 	z-index:1;
 }
 
+.card p {
+	margin-bottom: 1em;
+}
+
 .wide-card{
 	width:31em;
 }
