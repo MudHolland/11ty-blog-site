@@ -969,3 +969,8 @@ tc:hover {
 	color:var(--dark);
 }
 
+.flex-group {
+	display:flex;
+	gap:1em;
+	margin-bottom:3em;
+}
