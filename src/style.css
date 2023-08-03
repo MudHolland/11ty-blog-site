@@ -617,6 +617,13 @@ header .angle-bottom,
 	margin-bottom: 1em;
 }
 
+.card h3 {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+
 .wide-card{
 	width:31em;
 }
