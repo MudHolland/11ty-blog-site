@@ -3,11 +3,6 @@ title: Blog
 layout: 'base-card.njk'
 ---
        
-<div class="section container">
-	<h1 class="section-title">Recent articles</h1>
-  	<ul role="list" class="articles__list flow">
-		{%- for post in collections.post | reverse -%}
-			{% include 'card.njk' %}
-		{%- endfor -%}
-  	</ul>
-</div>
+{%- for post in collections.post | reverse -%}
+	{% include 'card.njk' %}
+{%- endfor -%}
