@@ -29,6 +29,7 @@
 	--font-weight-bold: 700;
 
 	/* sizes */
+	--size-xxxs: 0.0625em;
 	--size-xxs: 0.125em;
 	--size-xs: 0.25em;
 	--size-s: 0.5em;
@@ -55,7 +56,7 @@ body{
     font-family: var(--body-font);
     font-weight:var(--font-weight-normal);
     font-size:var(--base-font-size);
-    line-height:1.4;
+    line-height: 1.6;
     word-break: break-word;
     display: flex;
     flex-direction: column;
@@ -63,7 +64,7 @@ body{
 }
 
 table{
-    *border-collapse: collapse; /* IE7 and lower */
+    border-collapse: collapse; /* IE7 and lower */
     border-spacing: 0;
 	width:100%;
 	margin-bottom:var(--size-m);
@@ -112,15 +113,15 @@ tr:last-child{
 	border-bottom: var(--size-xxs) solid var(--secondary);
 }
 
-p + ol,
+/* p + ol,
 p + ul {
-	margin-top:-1rem;
-}
+	/* margin-top:-1rem;
+} */
 
 ul,
 ol {
 	font-size:1rem;
-	margin-bottom:var(--size-m);
+	margin-bottom: var(--size-m);
 }
 
 ol li{
@@ -129,17 +130,19 @@ ol li{
 }
 
 ul li{
-	padding-left:var(--size-m);
-	margin-left:1.5em;
+	padding-left: var(--size-m);
+	margin-left: var(--size-m);
 }
 
 ::marker{
+	font-weight:var(--font-weight-bold);
+	color:var(--primary);
 	padding: var(--size-m);
 	margin: var(--size-m);
 }
 
 ul li::marker{
-	content: '-';
+	content: '>';
 }
 
 ol{
@@ -157,7 +160,7 @@ ol ol {
 	position: fixed;
 	right: var(--size-m);
 	bottom: var(--size-m);
-	margin:1rem;
+	margin: var(--size-m);
 	width:5rem;
 	z-index:10;
 	border:solid var(--size-xs) var(--primary);
@@ -180,6 +183,8 @@ td:nth-child(1){
 	font-weight:var(--font-weight-bold);
 }
 
+section,
+article, 
 .wrapper {
 	max-width: 40em;
 	margin:0 auto;
@@ -194,6 +199,7 @@ td:nth-child(1){
 	/* z-index:2; */
 }
 
+main,
 .main {
 	flex: 1;
 	z-index:2;
@@ -213,9 +219,9 @@ img {
 figure{
 	position:relative;
 	transition-duration: var(--transition-time);
-	margin:-1em -1em 0 -1em;
-	padding:1em;
-    border-radius: var(--size-s);
+	margin:0 -1em 0 -1em;
+	padding: var(--size-m);
+    border-radius: var(--size-m);
 	z-index:1;
 }
 
@@ -230,6 +236,11 @@ figure>img:hover {
 figure:hover {
     scale:1.05;
 	z-index:10;
+}
+
+video{
+	width:100%;
+	border-radius:var(--size-s);
 }
 
 p {
@@ -259,7 +270,7 @@ em{
 	height: var(--size-m);
 	width: var(--size-m);
 	border:solid;
-	border-width:0.125em;
+	border-width:var(--size-xxs);
 	border-radius: 50%;
 	border-color:var(--primary);
 	display: inline-block;
@@ -272,7 +283,7 @@ em{
 mark{
 	background-color:var(--primary);
 	border-radius:0.75em;
-	padding:0 0.5em 0.1em 0.25em;
+	padding:0 var(--size-s) var(--size-xxs) var(--size-xs);
 }
 
 .half-width {
@@ -338,20 +349,20 @@ blockquote {
     position: relative;
     margin: 1em 0;
     background-color: var(--light-grey);
-    border-radius: 0.5em;
+    border-radius: var(--size-s);
     z-index: 1;
 }
 
 blockquote::before {
     transition: var(--transition-time);
-    content: "''";
+    content: attr(big-text);
 	color: var(--white);
     display: block;
     font-size: 7.5rem;
     font-weight: var(--font-weight-bold);
     text-transform: uppercase;
 	position: absolute;
-    top: -2.5rem;
+    top: -3.5rem;
     right: 1.25rem;
 	z-index: -1;
 }
@@ -365,7 +376,7 @@ blockquote.quote::after {
     font-weight: var(--font-weight-bold);
     text-transform: uppercase;
 	position: absolute;
-    bottom: -1.5rem;
+    bottom: -2rem;
     right: 1.25rem;
 	z-index: -1;
 }
@@ -379,7 +390,7 @@ blockquote.small::after {
     font-weight: var(--font-weight-bold);
     text-transform: uppercase;
 	position: absolute;
-    bottom: -0.75rem;
+    bottom: -1rem;
     right: 1.25rem;
 	z-index: -1;
 }
@@ -408,8 +419,7 @@ blockquote.small::before {
 .row{
 	display: flex;
 	flex-wrap: wrap;
-	gap: 1em;
-	/* padding: 0 0.25em; */
+	gap: var(--size-m);
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
@@ -452,24 +462,28 @@ figcaption {
 	position: relative;
 }
 
+header .angle-bottom,
 .header .angle-bottom{
 	background:transparent;
 	padding:0;
 }
 
+footer .angle-top,
 .footer .angle-top{
 	background:transparent;
 	padding:0;
 }
 
+header,
 .header{
 	position: relative;
 	/* background: var(--secondary); */
 	/* overflow: hidden; */
-	padding-block: 2em;
-	margin-bottom:3em;
+	padding-block:var(--size-l);
+	margin-bottom:var(--size-xl);
 }
 
+header::before,
 .header::before{
 	content: '';
 	background: var(--secondary);
@@ -479,6 +493,8 @@ figcaption {
 	height: 8em;
 	inset:0;
 }
+
+header::after,
 .header::after{
 	content: '';
 	background: var(--secondary);
@@ -488,6 +504,7 @@ figcaption {
 	transform: skewY(var(--skew-angle));
 }
 
+footer,
 .footer{
 	position: relative;
 	padding-block: 4rem 2em;
@@ -498,8 +515,10 @@ figcaption {
 	transform:translateY(-3.9em);
 }
 
+footer::before,
 .footer::before{
 	content: '';
+	height:10.5em;
 	background: var(--secondary);
 	position: absolute;
 	z-index:-1;
@@ -507,6 +526,7 @@ figcaption {
 	transform: skewY(var(--skew-angle));
 }
 
+footer::after,
 .footer::after{
 	content: '';
 	background: var(--secondary);
@@ -519,8 +539,8 @@ figcaption {
 .diagonal, 
 .angle-both{
 	position: relative;
-	padding: 4rem 0 3rem;
-	margin-block:1rem 3rem;
+	padding-block: 4rem 3rem;
+	margin-block: 3rem;
 }
 
 .diagonal::after,
@@ -545,6 +565,7 @@ figcaption {
 	margin-bottom: 3rem;
 }
 
+header .angle-bottom,
 .header .angle-bottom {
 	clip-path:none;
 	margin:0;
@@ -565,19 +586,24 @@ figcaption {
 	width: auto;
 }
 
+.disabled{
+	filter: saturate(0);
+	opacity:0.5;
+}
+
 .two-columns{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	gap:1em;
-	margin-bottom:1em;
+	gap:var(--size-m);
+	margin-bottom:var(--size-m);
 }
 
 .card {
 	position:relative;
 	display:flex;
 	flex-direction: column;
-	box-shadow: 0 0.0625em 0.125em 0;
+	box-shadow: 0 var(--size-xxxs) var(--size-xxs) 0 var(--dark);
 	color:var(--dark);
 	background-color:var(--white);
 	border-radius: var(--size-s);
@@ -596,7 +622,7 @@ figcaption {
 }
 
 .card:hover {
-	box-shadow: 0 0.75em 1.5em 0;
+	box-shadow: 0 var(--size-s) var(--size-m) 0 var(--dark);
 	scale:1.05;
 	z-index:2;
 }
@@ -617,7 +643,7 @@ figcaption {
 
 .card-img {
 	height:11.25em;
-	object-fit: fill;
+	object-fit: cover;
 	aspect-ratio: 5/3;
 	max-width:100%;
 	border-radius: var(--size-s) var(--size-s) 0em 0em;
@@ -632,12 +658,12 @@ figcaption {
 .top-left {
 	position: absolute;
 	font-size: 0.8rem;
-    top: 0.5em;
-    left: 0.5em;
+    top: var(--size-s);
+    left: var(--size-s);
     font-weight: var(--font-weight-bold);
     color: var(--primary);
     background: var(--dark);
-    padding: 0.25em 0.5em;
+    padding: var(--size-xs) var(--size-s);
     border-radius: 1.5em;
 }
 
@@ -653,9 +679,9 @@ button {
 	box-sizing: border-box;
 	border: solid var(--size-xs) var(--primary);
 	font-family: var(--heading-font);
-	border-radius: 0.5em;
+	border-radius: var(--size-s);
 	display: inline-block;
-	padding: 0.5em;
+	padding: var(--size-s);
 	color: var(--primary);
 	font-weight:var(--font-weight-bold);
 	background-color: var(--dark);
@@ -670,8 +696,9 @@ button:active,
 button.active {
 	background-color: var(--primary);
 	color: var(--dark);
-	/* box-shadow:0 0 0 0.25em	var(--dark) inset; */
 }
+
+
 
 button:active {
 	cursor:default;
@@ -742,7 +769,7 @@ select option[hidden] {
 .wrapper-600 {
 	max-width:35em;
 	float:left;
-	padding:1em;
+	padding:var(--size-m);
 }
 
 .handwritten {
@@ -783,17 +810,17 @@ ol .crumb:not(:last-child):after {
     color: var(--white);
     content: '>';
     font-size: 0.8rem;
-    padding: 0 0.5em;
+    padding: 0 var(--size-s);
 }
 
 ::-webkit-scrollbar {
-	width:1em;
+	width:var(--size-m);
 }
 
 ::-webkit-scrollbar-track {
 	background: var(--light-grey);
 	border-radius:100vw;
-	margin-block:-0.5em;
+	margin-block:-var(--size-s);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -804,26 +831,27 @@ ol .crumb:not(:last-child):after {
 
 ::-webkit-scrollbar-thumb:hover {
 	background: var(--primary);
-	border: 0.125em solid var(--dark);
-	box-shadow: 1em 1em var(--dark);
+	border: var(size-xxs) solid var(--dark);
+	box-shadow: 0 var(--size-s) var(--size-m) 0 var(--dark);
 }
 
 .darkmode {
 	visibility:hidden;
 }
 
-@media screen and (max-width: 50em) {
+@media screen and (max-width: 40em) {
 	.column {
 	  display: block;
 	}
 
-	.card{
-		max-width: 15em;
-		margin:0 auto;
+	figure{
+		padding: var(--size-m);
 	}
 
 	.half-width {
 		width: 100%;
+		padding:0;
+		padding-block: 1em;
 	}
 }
 
@@ -869,6 +897,65 @@ ol .crumb:not(:last-child):after {
 	content:'';
 	border: .5em solid transparent;
 	border-top-color: var(--dark);
+}
+
+.accordion{
+	margin-bottom: 1em;
+}
+
+.accordion__button{
+	box-sizing:border-box;
+	display: block;
+	width:100%;
+	padding: 1em;
+	line-height: 1.6;
+	border:none;
+	border-bottom:0 solid var(--white);
+	text-align:left;
+	background-color: var(--light-grey);
+	color:var(--dark-grey);
+	border-color:var(--white);
+}
+
+.accordion__button:hover{
+	background-color: var(--dark);
+	color:var(--primary);
+}
+
+.accordion__button::after{
+	content:'\25be';
+	float:right;
+	transform: rotate(0deg) scale(2);
+}
+
+.accordion__button--active + .accordion__content{
+	display:block;
+}
+
+.accordion__button--active{
+	background-color: var(--light-grey);
+	color:var(--dark-grey);
+	border-bottom: var(--size-xs) solid var(--white);
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.accordion__button--active::after{
+	transform: rotate(180deg) scale(2);
+	float:right;
+	transition: transform var(--transition-time);
+}
+
+.accordion__content{
+	display: none;
+	overflow:hidden;
+	padding:var(--size-m);
+	transition: all var(--transition-time);
+	background-color: var(--light-grey);
+	color:var(--dark-grey);
+	border-bottom-left-radius: var(--size-s);
+	border-bottom-right-radius: var(--size-s);
+	max-height:initial;
 }
 
 @media (prefers-color-scheme: dark){
@@ -920,7 +1007,26 @@ ol .crumb:not(:last-child):after {
 	}
 
 	figure:hover{
-		box-shadow:0 var(--size-s) var(--size-m) #000;
+		box-shadow:0 var(--size-s) var(--size-m) 0 #000;
+	}
+
+	.accordion__button{
+		background-color: var(--dark-grey);
+		color:var(--light-grey);
+		border-color:var(--dark);
+	}
+
+	.accordion__button:hover{
+		background-color: var(--dark-grey);
+	}
+
+	.accordion__button--active{
+		border-color: var(--dark);
+	}
+	
+	.accordion__content{
+		background-color: var(--dark-grey);
+		color:var(--light-grey);
 	}
 }
 
@@ -947,7 +1053,7 @@ ol .crumb:not(:last-child):after {
 	}
 
 	figure:hover{
-		box-shadow:0 var(--size-s) var(--size-m) var(--dark);
+		box-shadow:0 var(--size-s) var(--size-m) 0 var(--dark);
 	}
 }
 
@@ -971,6 +1077,88 @@ tc:hover {
 
 .flex-group {
 	display:flex;
-	gap:1em;
-	margin-bottom:3em;
+	gap:var(--size-m);
+	margin-bottom:var(--size-xl);
 }
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 6em; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: var(--dark); /* Fallback color */
+    background-color: rgba(0, 32, 51, 0.9); /*Black w/ opacity */
+    z-index:100;
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    object-fit: contain;
+    max-width: 80vw;
+    max-height: 80vh;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 72em;
+    text-align: center;
+    color: #ccc;
+    padding: 1em 0;
+    height: 10em;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 1em;
+    right: 1.5em;
+    color: #f1f1f1;
+    font-size: 2.5em;
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+.close:hover,
+.close:focus {
+    color: var(--yellow);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
